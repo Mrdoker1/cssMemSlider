@@ -44,6 +44,7 @@
 
 .slide,
 .message {
+    overflow: hidden;
     width: 25%;
     transition: all 0.2s ease;
 }
