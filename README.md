@@ -1,5 +1,5 @@
 # cssMemSlider
-[github.io link](https://mrdoker1.github.io/cssMemSlider/cssMemSlider/)
+[github.io link](https://mrdoker1.github.io/cssMemSlider/cssMemSlider)
 
 > ### For Timestamps:
 - git add -u;
