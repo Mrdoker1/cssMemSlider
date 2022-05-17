@@ -3,27 +3,35 @@
     margin: 0;
     padding: 0;
     font-family: 'Pacifico', cursive;
-    font-size: 24px;
     color: white;
+}
+
+.message {
+    font-size: 1.7rem;
+}
+
+.request>a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 
 .slider {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 50rem;
     background-color: black;
-    border: 24px solid black;
+    border: 1.8rem solid black;
 }
 
 .slider-container {
     overflow: hidden;
-    border: 1px solid rgb(255, 247, 231);
+    border: 0.2rem solid rgb(255, 247, 231);
 }
 
 .message-container {
     max-width: 100%;
-    max-height: 100px;
+    max-height: 6.25rem;
     overflow: hidden;
 }
 
@@ -58,20 +66,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
 }
 
 input[class="slider-radio"] {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
 }
 
 .select {
-    width: 12px;
-    height: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.2rem;
     transition: .2s ease;
 }
 
@@ -80,7 +88,7 @@ input[class="slider-radio"] {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px 0 40px 0;
+    padding: 1.2rem 0 1.6rem 0;
 }
 
 #radio1:checked~.slider .start {
@@ -111,7 +119,7 @@ input[class="slider-radio"] {
 #radio3:checked~.slider .navigation label:nth-child(3):hover .select,
 #radio4:checked~.slider .navigation label:nth-child(4):hover .select {
     background-color: rgb(180, 180, 180);
-    border: 1px solid rgb(180, 180, 180);
+    border: 0.1rem solid rgb(180, 180, 180);
 }
 
 #radio1:checked~.slider .navigation label:nth-child(1):active .select,
@@ -119,25 +127,25 @@ input[class="slider-radio"] {
 #radio3:checked~.slider .navigation label:nth-child(3):active .select,
 #radio4:checked~.slider .navigation label:nth-child(4):active .select {
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(255, 255, 255);
+    border: 0.3rem solid rgba(255, 255, 255);
 }
 
 .navigation label:hover .select {
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.1rem solid rgb(255, 255, 255);
 }
 
 .navigation label:active .select {
-    border: 2px solid rgb(252, 252, 252);
+    border: 0.3rem solid rgb(252, 252, 252);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
     .bottom {
         flex-direction: column-reverse;
     }
     .message-container {
-        padding-top: 20px;
+        padding-top: 2rem;
     }
-    * {
-        font-size: 18px;
+    .message {
+        font-size: 1rem;
     }
 }
