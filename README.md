@@ -4,5 +4,5 @@
 
 > ### For Timestamps:
 - git add -u;
-- git commit -m "feat: generated files on (`date +'%Y-%m-%d %H:%M:%S'`)";
+- git commit -m "feat: generated files on $(`date +'%Y-%m-%d %H:%M:%S'`)";
 - git push origin master
