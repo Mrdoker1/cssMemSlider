@@ -72,7 +72,7 @@
 }
 
 input[class="slider-radio"] {
-    position: fixed;
+    position: relative;
     visibility: hidden;
 }
 
