@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.message {
+    font-size: 1.6rem;
+}
+
+.request>a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    background-color: black;
+    border: 1.8rem solid black;
+}
+
+.slider-container {
+    overflow: hidden;
+    border: 0.2rem solid rgb(255, 247, 231);
+}
+
+.message-container {
+    max-width: 100%;
+    max-height: 6.25rem;
+    overflow: hidden;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+}
+
+.slides,
+.messages {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide,
+.message {
+    overflow: hidden;
+    width: 25%;
+    transition: all 0.2s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+.switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+input[class="slider-radio"] {
+    position: relative;
+    visibility: hidden;
+}
+
+.select {
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.2rem;
+    transition: .2s ease;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.2rem 0 1.6rem 0;
+}
+
+#radio1:checked~.slider .start {
+    margin-left: 0;
+}
+
+#radio2:checked~.slider .start {
+    margin-left: -25%;
+}
+
+#radio3:checked~.slider .start {
+    margin-left: -50%;
+}
+
+#radio4:checked~.slider .start {
+    margin-left: -75%;
+}
+
+#radio1:checked~.slider .navigation label:nth-child(1) .select,
+#radio2:checked~.slider .navigation label:nth-child(2) .select,
+#radio3:checked~.slider .navigation label:nth-child(3) .select,
+#radio4:checked~.slider .navigation label:nth-child(4) .select {
+    background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked~.slider .navigation label:nth-child(1):hover .select,
+#radio2:checked~.slider .navigation label:nth-child(2):hover .select,
+#radio3:checked~.slider .navigation label:nth-child(3):hover .select,
+#radio4:checked~.slider .navigation label:nth-child(4):hover .select {
+    background-color: rgb(180, 180, 180);
+    border: 0.1rem solid rgb(180, 180, 180);
+}
+
+#radio1:checked~.slider .navigation label:nth-child(1):active .select,
+#radio2:checked~.slider .navigation label:nth-child(2):active .select,
+#radio3:checked~.slider .navigation label:nth-child(3):active .select,
+#radio4:checked~.slider .navigation label:nth-child(4):active .select {
+    background-color: rgb(255, 255, 255);
+    border: 0.3rem solid rgba(255, 255, 255);
+}
+
+.navigation label:hover .select {
+    border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.navigation label:active .select {
+    border: 0.3rem solid rgb(252, 252, 252);
+}
+
+@media screen and (max-width: 48rem) {
+    .bottom {
+        flex-direction: column-reverse;
+    }
+    .message-container {
+        padding-top: 2rem;
+    }
+    .message {
+        font-size: 1rem;
+    }
+}
